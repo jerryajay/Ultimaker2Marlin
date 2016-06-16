@@ -1,0 +1,344 @@
+VERSION_STRING	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^#define VERSION_STRING /;"	macro	line:54	file:
+card	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^CardReader card;$/;"	variable	line:164
+homing_feedrate	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^float homing_feedrate[] = HOMING_FEEDRATE;$/;"	variable	line:166
+axis_relative_modes	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^bool axis_relative_modes[] = AXIS_RELATIVE_MODES;$/;"	variable	line:167
+feedmultiply	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^int feedmultiply=100; \/\/100->1 200->2$/;"	variable	line:168
+saved_feedmultiply	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^int saved_feedmultiply;$/;"	variable	line:169
+extrudemultiply	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^int extrudemultiply[EXTRUDERS]=ARRAY_BY_EXTRUDERS(100, 100, 100); \/\/100->1 200->2$/;"	variable	line:170
+current_position	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^float current_position[NUM_AXIS] = { 0.0, 0.0, 0.0, 0.0 };$/;"	variable	line:171
+add_homeing	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^float add_homeing[3]={0,0,0};$/;"	variable	line:172
+min_pos	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^float min_pos[3] = { X_MIN_POS, Y_MIN_POS, Z_MIN_POS };$/;"	variable	line:173
+max_pos	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^float max_pos[3] = { X_MAX_POS, Y_MAX_POS, Z_MAX_POS };$/;"	variable	line:174
+extruder_offset	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^float extruder_offset[2][EXTRUDERS] = {$/;"	variable	line:177
+active_extruder	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^uint8_t active_extruder = 0;$/;"	variable	line:183
+fanSpeed	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^uint8_t fanSpeed=0;$/;"	variable	line:184
+fanSpeedPercent	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^uint8_t fanSpeedPercent=100;$/;"	variable	line:185
+machinesettings	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^struct machinesettings {$/;"	struct	line:187	file:
+machinesettings	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^  machinesettings() : has_saved_settings(0) {}$/;"	function	line:188	struct:machinesettings	signature:()
+feedmultiply	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^  int feedmultiply;$/;"	member	line:189	struct:machinesettings	file:
+HotendTemperature	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^  int HotendTemperature[EXTRUDERS];$/;"	member	line:190	struct:machinesettings	file:
+BedTemperature	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^  int BedTemperature;$/;"	member	line:191	struct:machinesettings	file:
+fanSpeed	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^  uint8_t fanSpeed;$/;"	member	line:192	struct:machinesettings	file:
+extrudemultiply	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^  int extrudemultiply[EXTRUDERS];$/;"	member	line:193	struct:machinesettings	file:
+max_acceleration_units_per_sq_second	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^  long max_acceleration_units_per_sq_second[NUM_AXIS];$/;"	member	line:194	struct:machinesettings	file:
+max_feedrate	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^  float max_feedrate[NUM_AXIS];$/;"	member	line:195	struct:machinesettings	file:
+acceleration	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^  float acceleration;$/;"	member	line:196	struct:machinesettings	file:
+minimumfeedrate	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^  float minimumfeedrate;$/;"	member	line:197	struct:machinesettings	file:
+mintravelfeedrate	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^  float mintravelfeedrate;$/;"	member	line:198	struct:machinesettings	file:
+minsegmenttime	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^  long minsegmenttime;$/;"	member	line:199	struct:machinesettings	file:
+max_xy_jerk	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^  float max_xy_jerk;$/;"	member	line:200	struct:machinesettings	file:
+max_z_jerk	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^  float max_z_jerk;$/;"	member	line:201	struct:machinesettings	file:
+max_e_jerk	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^  float max_e_jerk;$/;"	member	line:202	struct:machinesettings	file:
+has_saved_settings	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^  uint8_t has_saved_settings;$/;"	member	line:203	struct:machinesettings	file:
+machinesettings_tempsave	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^machinesettings machinesettings_tempsave[10];$/;"	variable	line:205
+servo_endstops	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^  int servo_endstops[] = SERVO_ENDSTOPS;$/;"	variable	line:208
+servo_endstop_angles	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^  int servo_endstop_angles[] = SERVO_ENDSTOP_ANGLES;$/;"	variable	line:209
+ValvePressure	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^int ValvePressure=0;$/;"	variable	line:212
+EtoPPressure	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^int EtoPPressure=0;$/;"	variable	line:213
+position_error	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^bool position_error;$/;"	variable	line:215
+autoretract_enabled	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^  bool autoretract_enabled=false;$/;"	variable	line:218
+retracted	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^  bool retracted=false;$/;"	variable	line:219
+retract_length	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^  float retract_length=4.5, retract_feedrate=25*60, retract_zlift=0.8;$/;"	variable	line:220
+retract_feedrate	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^  float retract_length=4.5, retract_feedrate=25*60, retract_zlift=0.8;$/;"	variable	line:220
+retract_zlift	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^  float retract_length=4.5, retract_feedrate=25*60, retract_zlift=0.8;$/;"	variable	line:220
+extruder_swap_retract_length	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^  float extruder_swap_retract_length=16.0;$/;"	variable	line:222
+retract_recover_length	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^  float retract_recover_length=0, retract_recover_feedrate=25*60;$/;"	variable	line:224
+retract_recover_feedrate	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^  float retract_recover_length=0, retract_recover_feedrate=25*60;$/;"	variable	line:224
+printing_state	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^uint8_t printing_state;$/;"	variable	line:227
+axis_codes	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^const char axis_codes[NUM_AXIS] = {'X', 'Y', 'Z', 'E'};$/;"	variable	line:232
+destination	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^static float destination[NUM_AXIS] = {  0.0, 0.0, 0.0, 0.0};$/;"	variable	line:233	file:
+delta	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^static float delta[3] = {0.0, 0.0, 0.0};$/;"	variable	line:235	file:
+offset	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^static float offset[3] = {0.0, 0.0, 0.0};$/;"	variable	line:237	file:
+home_all_axis	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^static bool home_all_axis = true;$/;"	variable	line:238	file:
+feedrate	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^static float feedrate = 1500.0, next_feedrate, saved_feedrate;$/;"	variable	line:239	file:
+next_feedrate	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^static float feedrate = 1500.0, next_feedrate, saved_feedrate;$/;"	variable	line:239	file:
+saved_feedrate	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^static float feedrate = 1500.0, next_feedrate, saved_feedrate;$/;"	variable	line:239	file:
+gcode_N	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^static long gcode_N, gcode_LastN, Stopped_gcode_LastN = 0;$/;"	variable	line:240	file:
+gcode_LastN	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^static long gcode_N, gcode_LastN, Stopped_gcode_LastN = 0;$/;"	variable	line:240	file:
+Stopped_gcode_LastN	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^static long gcode_N, gcode_LastN, Stopped_gcode_LastN = 0;$/;"	variable	line:240	file:
+relative_mode	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^static bool relative_mode = false;  \/\/Determines Absolute or Relative Coordinates$/;"	variable	line:242	file:
+cmdbuffer	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^static char cmdbuffer[BUFSIZE][MAX_CMD_SIZE];$/;"	variable	line:244	file:
+fromsd	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^static bool fromsd[BUFSIZE];$/;"	variable	line:245	file:
+bufindr	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^static int bufindr = 0;$/;"	variable	line:246	file:
+bufindw	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^static int bufindw = 0;$/;"	variable	line:247	file:
+buflen	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^static int buflen = 0;$/;"	variable	line:248	file:
+serial_char	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^static char serial_char;$/;"	variable	line:250	file:
+serial_count	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^static int serial_count = 0;$/;"	variable	line:251	file:
+comment_mode	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^static boolean comment_mode = false;$/;"	variable	line:252	file:
+strchr_pointer	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^static char *strchr_pointer; \/\/ just a pointer to find chars in the cmd string like X, Y, Z, E, etc$/;"	variable	line:253	file:
+sensitive_pins	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^const int sensitive_pins[] = SENSITIVE_PINS; \/\/ Sensitive pin list for M42$/;"	variable	line:255
+previous_millis_cmd	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^static unsigned long previous_millis_cmd = 0;$/;"	variable	line:261	file:
+max_inactive_time	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^static unsigned long max_inactive_time = 0;$/;"	variable	line:262	file:
+stepper_inactive_time	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^static unsigned long stepper_inactive_time = DEFAULT_STEPPER_DEACTIVE_TIME*1000l;$/;"	variable	line:263	file:
+starttime	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^unsigned long starttime=0;$/;"	variable	line:265
+stoptime	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^unsigned long stoptime=0;$/;"	variable	line:266
+tmp_extruder	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^static uint8_t tmp_extruder;$/;"	variable	line:268	file:
+Stopped	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^uint8_t Stopped = false;$/;"	variable	line:271
+servos	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^  Servo servos[NUM_SERVOS];$/;"	variable	line:274
+serial_echopair_P	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^void serial_echopair_P(const char *s_P, float v)$/;"	function	line:284	signature:(const char *s_P, float v)
+serial_echopair_P	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^void serial_echopair_P(const char *s_P, double v)$/;"	function	line:286	signature:(const char *s_P, double v)
+serial_echopair_P	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^void serial_echopair_P(const char *s_P, unsigned long v)$/;"	function	line:288	signature:(const char *s_P, unsigned long v)
+freeMemory	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^  int freeMemory() {$/;"	function	line:296	signature:()
+clear_command_queue	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^void clear_command_queue()$/;"	function	line:309	signature:()
+enquecommand	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^void enquecommand(const char *cmd)$/;"	function	line:321	signature:(const char *cmd)
+enquecommand_P	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^void enquecommand_P(const char *cmd)$/;"	function	line:336	signature:(const char *cmd)
+is_command_queued	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^bool is_command_queued()$/;"	function	line:351	signature:()
+commands_queued	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^uint8_t commands_queued()$/;"	function	line:356	signature:()
+setup_killpin	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^void setup_killpin()$/;"	function	line:361	signature:()
+setup_photpin	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^void setup_photpin()$/;"	function	line:369	signature:()
+setup_powerhold	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^void setup_powerhold()$/;"	function	line:377	signature:()
+suicide	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^void suicide()$/;"	function	line:389	signature:()
+servo_init	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^void servo_init()$/;"	function	line:397	signature:()
+setup	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^void setup()$/;"	function	line:426	signature:()
+loop	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^void loop()$/;"	function	line:484	signature:()
+get_command	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^void get_command()$/;"	function	line:535	signature:()
+code_value	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^float code_value()$/;"	function	line:733	signature:()
+code_value_long	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^long code_value_long()$/;"	function	line:738	signature:()
+code_seen	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^bool code_seen(char code)$/;"	function	line:743	signature:(char code)
+DEFINE_PGM_READ_ANY	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^#define DEFINE_PGM_READ_ANY(/;"	macro	line:749	file:
+XYZ_CONSTS_FROM_CONFIG	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^#define XYZ_CONSTS_FROM_CONFIG(/;"	macro	line:756	file:
+axis_is_at_home	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^static void axis_is_at_home(int axis) {$/;"	function	line:769	file:	signature:(int axis)
+homeaxis	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^static void homeaxis(int axis) {$/;"	function	line:775	file:	signature:(int axis)
+HOMEAXIS_DO	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^#define HOMEAXIS_DO(/;"	macro	line:776	file:
+HOMEAXIS	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^#define HOMEAXIS(/;"	macro	line:880	file:
+process_commands	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^void process_commands()$/;"	function	line:882	signature:()
+FlushSerialRequestResend	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^void FlushSerialRequestResend()$/;"	function	line:2460	signature:()
+ClearToSend	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^void ClearToSend()$/;"	function	line:2469	signature:()
+get_coordinates	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^void get_coordinates()$/;"	function	line:2479	signature:()
+get_arc_coordinates	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^void get_arc_coordinates()$/;"	function	line:2535	signature:()
+clamp_to_software_endstops	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^void clamp_to_software_endstops(float target[3])$/;"	function	line:2560	signature:(float target[3])
+calculate_delta	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^void calculate_delta(float cartesian[3])$/;"	function	line:2576	signature:(float cartesian[3])
+prepare_move	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^void prepare_move()$/;"	function	line:2602	signature:()
+prepare_arc_move	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^void prepare_arc_move(char isclockwise) {$/;"	function	line:2646	signature:(char isclockwise)
+lastMotor	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^unsigned long lastMotor = 0; \/\/Save the time for when a motor was turned on last$/;"	variable	line:2669
+lastMotorCheck	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^unsigned long lastMotorCheck = 0;$/;"	variable	line:2670
+controllerFan	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^void controllerFan()$/;"	function	line:2672	signature:()
+manage_inactivity	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^void manage_inactivity()$/;"	function	line:2705	signature:()
+kill	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^void kill()$/;"	function	line:2758	signature:()
+Stop	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^void Stop(uint8_t reasonNr)$/;"	function	line:2780	signature:(uint8_t reasonNr)
+IsStopped	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^bool IsStopped() { return Stopped; };$/;"	function	line:2792	signature:()
+StoppedReason	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^uint8_t StoppedReason() { return Stopped; };$/;"	function	line:2793	signature:()
+setPwmFrequency	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^void setPwmFrequency(uint8_t pin, int val)$/;"	function	line:2796	signature:(uint8_t pin, int val)
+setTargetedHotend	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Marlin_main.cpp	/^bool setTargetedHotend(int code){$/;"	function	line:2865	signature:(int code)
+minsegmenttime	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^unsigned long minsegmenttime;$/;"	variable	line:67
+max_feedrate	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^float max_feedrate[4]; \/\/ set the max speeds$/;"	variable	line:68
+axis_steps_per_unit	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^float axis_steps_per_unit[4];$/;"	variable	line:69
+volume_to_filament_length	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^float volume_to_filament_length[EXTRUDERS];$/;"	variable	line:70
+max_acceleration_units_per_sq_second	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^unsigned long max_acceleration_units_per_sq_second[4]; \/\/ Use M201 to override by software$/;"	variable	line:71
+minimumfeedrate	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^float minimumfeedrate;$/;"	variable	line:72
+acceleration	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^float acceleration;         \/\/ Normal acceleration mm\/s^2  THIS IS THE DEFAULT ACCELERATION for all moves. M204 SXXXX$/;"	variable	line:73
+retract_acceleration	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^float retract_acceleration; \/\/  mm\/s^2   filament pull-pack and push-forward  while standing still in the other axis M204 TXXXX$/;"	variable	line:74
+max_xy_jerk	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^float max_xy_jerk; \/\/speed than can be stopped at once, if i understand correctly.$/;"	variable	line:75
+max_z_jerk	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^float max_z_jerk;$/;"	variable	line:76
+max_e_jerk	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^float max_e_jerk;$/;"	variable	line:77
+mintravelfeedrate	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^float mintravelfeedrate;$/;"	variable	line:78
+axis_steps_per_sqr_second	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^unsigned long axis_steps_per_sqr_second[NUM_AXIS];$/;"	variable	line:79
+position	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^long position[4];   \/\/rescaled from extern when axis_steps_per_unit are changed by gcode$/;"	variable	line:82
+previous_speed	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^static float previous_speed[4]; \/\/ Speed of previous path line segment$/;"	variable	line:83	file:
+previous_nominal_speed	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^static float previous_nominal_speed; \/\/ Nominal speed of previous path line segment$/;"	variable	line:84	file:
+autotemp_max	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^float autotemp_max=250;$/;"	variable	line:87
+autotemp_min	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^float autotemp_min=210;$/;"	variable	line:88
+autotemp_factor	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^float autotemp_factor=0.1;$/;"	variable	line:89
+autotemp_enabled	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^bool autotemp_enabled=false;$/;"	variable	line:90
+block_buffer	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^block_t block_buffer[BLOCK_BUFFER_SIZE];            \/\/ A ring buffer for motion instfructions$/;"	variable	line:96
+block_buffer_head	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^volatile unsigned char block_buffer_head;           \/\/ Index of the next block to be pushed$/;"	variable	line:97
+block_buffer_tail	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^volatile unsigned char block_buffer_tail;           \/\/ Index of the block to process now$/;"	variable	line:98
+extrude_min_temp	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^float extrude_min_temp=EXTRUDE_MINTEMP;$/;"	variable	line:104
+MAX_FREQ_TIME	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^#define MAX_FREQ_TIME /;"	macro	line:107	file:
+old_direction_bits	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^static unsigned char old_direction_bits = 0;               \/\/ Old direction bits. Used for speed calculations$/;"	variable	line:109	file:
+x_segment_time	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^static long x_segment_time[3]={MAX_FREQ_TIME + 1,0,0};     \/\/ Segment times (in us). Used for speed calculations$/;"	variable	line:110	file:
+y_segment_time	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^static long y_segment_time[3]={MAX_FREQ_TIME + 1,0,0};$/;"	variable	line:111	file:
+next_block_index	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^static int8_t next_block_index(int8_t block_index) {$/;"	function	line:116	file:	signature:(int8_t block_index)
+prev_block_index	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^static int8_t prev_block_index(int8_t block_index) {$/;"	function	line:126	file:	signature:(int8_t block_index)
+estimate_acceleration_distance	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^FORCE_INLINE float estimate_acceleration_distance(float initial_rate, float target_rate, float acceleration)$/;"	function	line:140	signature:(float initial_rate, float target_rate, float acceleration)
+intersection_distance	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^FORCE_INLINE float intersection_distance(float initial_rate, float final_rate, float acceleration, float distance)$/;"	function	line:156	signature:(float initial_rate, float final_rate, float acceleration, float distance)
+calculate_trapezoid_for_block	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^void calculate_trapezoid_for_block(block_t *block, float entry_factor, float exit_factor) {$/;"	function	line:169	signature:(block_t *block, float entry_factor, float exit_factor)
+max_allowable_speed	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^FORCE_INLINE float max_allowable_speed(float acceleration, float target_velocity, float distance) {$/;"	function	line:223	signature:(float acceleration, float target_velocity, float distance)
+planner_reverse_pass_kernel	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^void planner_reverse_pass_kernel(block_t *previous, block_t *current, block_t *next) {$/;"	function	line:237	signature:(block_t *previous, block_t *current, block_t *next)
+planner_reverse_pass	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^void planner_reverse_pass() {$/;"	function	line:265	signature:()
+planner_forward_pass_kernel	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^void planner_forward_pass_kernel(block_t *previous, block_t *current, block_t *next) {$/;"	function	line:288	signature:(block_t *previous, block_t *current, block_t *next)
+planner_forward_pass	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^void planner_forward_pass() {$/;"	function	line:313	signature:()
+planner_recalculate_trapezoids	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^void planner_recalculate_trapezoids() {$/;"	function	line:331	signature:()
+planner_recalculate	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^void planner_recalculate() {$/;"	function	line:375	signature:()
+plan_init	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^void plan_init() {$/;"	function	line:381	signature:()
+getHighESpeed	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^void getHighESpeed()$/;"	function	line:398	signature:()
+check_axes_activity	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^void check_axes_activity()$/;"	function	line:440	signature:()
+junction_deviation	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^float junction_deviation = 0.1;$/;"	variable	line:517
+plan_buffer_line	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^void plan_buffer_line(const float &x, const float &y, const float &z, const float &e, float feed_rate, const uint8_t &extruder)$/;"	function	line:521	signature:(const float &x, const float &y, const float &z, const float &e, float feed_rate, const uint8_t &extruder)
+MAX_FREQ_TIME	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^#define MAX_FREQ_TIME /;"	macro	line:730	file:
+plan_set_position	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^void plan_set_position(const float &x, const float &y, const float &z, const float &e)$/;"	function	line:929	signature:(const float &x, const float &y, const float &z, const float &e)
+plan_set_e_position	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^void plan_set_e_position(const float &e)$/;"	function	line:943	signature:(const float &e)
+movesplanned	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^uint8_t movesplanned()$/;"	function	line:949	signature:()
+set_extrude_min_temp	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^void set_extrude_min_temp(float temp)$/;"	function	line:955	signature:(float temp)
+reset_acceleration_rates	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/planner.cpp	/^void reset_acceleration_rates()$/;"	function	line:962	signature:()
+CONFIGURATION_H	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define CONFIGURATION_H$/;"	macro	line:2
+STRING_VERSION_CONFIG_H	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define STRING_VERSION_CONFIG_H /;"	macro	line:11
+STRING_CONFIG_H_AUTHOR	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define STRING_CONFIG_H_AUTHOR /;"	macro	line:13
+SERIAL_PORT	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define SERIAL_PORT /;"	macro	line:19
+BAUDRATE	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define BAUDRATE /;"	macro	line:22
+MOTHERBOARD	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define MOTHERBOARD /;"	macro	line:59
+EXTRUDERS	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define EXTRUDERS /;"	macro	line:67
+POWER_SUPPLY	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define POWER_SUPPLY /;"	macro	line:74
+DELTA_SEGMENTS_PER_SECOND	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define DELTA_SEGMENTS_PER_SECOND /;"	macro	line:86
+DELTA_DIAGONAL_ROD	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define DELTA_DIAGONAL_ROD /;"	macro	line:89
+DELTA_SMOOTH_ROD_OFFSET	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define DELTA_SMOOTH_ROD_OFFSET /;"	macro	line:92
+DELTA_EFFECTOR_OFFSET	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define DELTA_EFFECTOR_OFFSET /;"	macro	line:95
+DELTA_CARRIAGE_OFFSET	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define DELTA_CARRIAGE_OFFSET /;"	macro	line:98
+DELTA_RADIUS	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define DELTA_RADIUS /;"	macro	line:101
+SIN_60	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define SIN_60 /;"	macro	line:104
+COS_60	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define COS_60 /;"	macro	line:105
+DELTA_TOWER1_X	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define DELTA_TOWER1_X /;"	macro	line:106
+DELTA_TOWER1_Y	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define DELTA_TOWER1_Y /;"	macro	line:107
+DELTA_TOWER2_X	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define DELTA_TOWER2_X /;"	macro	line:108
+DELTA_TOWER2_Y	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define DELTA_TOWER2_Y /;"	macro	line:109
+DELTA_TOWER3_X	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define DELTA_TOWER3_X /;"	macro	line:110
+DELTA_TOWER3_Y	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define DELTA_TOWER3_Y /;"	macro	line:111
+TEMP_SENSOR_0	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define TEMP_SENSOR_0 /;"	macro	line:141
+TEMP_SENSOR_1	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define TEMP_SENSOR_1 /;"	macro	line:142
+TEMP_SENSOR_2	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define TEMP_SENSOR_2 /;"	macro	line:143
+TEMP_SENSOR_BED	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define TEMP_SENSOR_BED /;"	macro	line:144
+MAX_REDUNDANT_TEMP_SENSOR_DIFF	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define MAX_REDUNDANT_TEMP_SENSOR_DIFF /;"	macro	line:148
+TEMP_RESIDENCY_TIME	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define TEMP_RESIDENCY_TIME /;"	macro	line:151
+TEMP_HYSTERESIS	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define TEMP_HYSTERESIS /;"	macro	line:152
+TEMP_WINDOW	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define TEMP_WINDOW /;"	macro	line:153
+HEATER_0_MINTEMP	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define HEATER_0_MINTEMP /;"	macro	line:158
+HEATER_1_MINTEMP	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define HEATER_1_MINTEMP /;"	macro	line:159
+HEATER_2_MINTEMP	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define HEATER_2_MINTEMP /;"	macro	line:160
+BED_MINTEMP	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define BED_MINTEMP /;"	macro	line:161
+HEATER_0_MAXTEMP	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define HEATER_0_MAXTEMP /;"	macro	line:166
+HEATER_1_MAXTEMP	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define HEATER_1_MAXTEMP /;"	macro	line:167
+HEATER_2_MAXTEMP	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define HEATER_2_MAXTEMP /;"	macro	line:168
+BED_MAXTEMP	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define BED_MAXTEMP /;"	macro	line:169
+MAX_HEATING_TEMPERATURE_INCREASE	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define MAX_HEATING_TEMPERATURE_INCREASE /;"	macro	line:173
+MAX_HEATING_CHECK_MILLIS	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define MAX_HEATING_CHECK_MILLIS /;"	macro	line:174
+PIDTEMP	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define PIDTEMP$/;"	macro	line:183
+BANG_MAX	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define BANG_MAX /;"	macro	line:184
+PID_MAX	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define PID_MAX /;"	macro	line:185
+PID_DEBUG	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^  #define PID_DEBUG /;"	macro	line:187
+PID_FUNCTIONAL_RANGE	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^  #define PID_FUNCTIONAL_RANGE /;"	macro	line:189
+PID_INTEGRAL_DRIVE_MAX	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^  #define PID_INTEGRAL_DRIVE_MAX /;"	macro	line:191
+K1	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^  #define K1 /;"	macro	line:192
+PID_dT	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^  #define PID_dT /;"	macro	line:193
+DEFAULT_Kp	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^    #define  DEFAULT_Kp /;"	macro	line:202
+DEFAULT_Ki	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^    #define  DEFAULT_Ki /;"	macro	line:203
+DEFAULT_Kd	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^    #define  DEFAULT_Kd /;"	macro	line:204
+MAX_BED_POWER	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define MAX_BED_POWER /;"	macro	line:235
+DEFAULT_bedKp	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^    #define  DEFAULT_bedKp /;"	macro	line:251
+DEFAULT_bedKi	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^    #define  DEFAULT_bedKi /;"	macro	line:252
+DEFAULT_bedKd	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^    #define  DEFAULT_bedKd /;"	macro	line:253
+PREVENT_DANGEROUS_EXTRUDE	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define PREVENT_DANGEROUS_EXTRUDE$/;"	macro	line:262
+PREVENT_LENGTHY_EXTRUDE	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define PREVENT_LENGTHY_EXTRUDE$/;"	macro	line:264
+EXTRUDE_MINTEMP	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define EXTRUDE_MINTEMP /;"	macro	line:266
+EXTRUDE_MAXLENGTH	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define EXTRUDE_MAXLENGTH /;"	macro	line:267
+ENDSTOPPULLUPS	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define ENDSTOPPULLUPS /;"	macro	line:277
+ENDSTOPPULLUP_XMAX	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^  #define ENDSTOPPULLUP_XMAX$/;"	macro	line:281
+ENDSTOPPULLUP_YMAX	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^  #define ENDSTOPPULLUP_YMAX$/;"	macro	line:282
+ENDSTOPPULLUP_ZMAX	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^  #define ENDSTOPPULLUP_ZMAX$/;"	macro	line:283
+ENDSTOPPULLUP_XMIN	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^  #define ENDSTOPPULLUP_XMIN$/;"	macro	line:284
+ENDSTOPPULLUP_YMIN	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^  #define ENDSTOPPULLUP_YMIN$/;"	macro	line:285
+ENDSTOPPULLUP_XMAX	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^  #define ENDSTOPPULLUP_XMAX$/;"	macro	line:290
+ENDSTOPPULLUP_YMAX	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^  #define ENDSTOPPULLUP_YMAX$/;"	macro	line:291
+ENDSTOPPULLUP_ZMAX	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^  #define ENDSTOPPULLUP_ZMAX$/;"	macro	line:292
+ENDSTOPPULLUP_XMIN	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^  #define ENDSTOPPULLUP_XMIN$/;"	macro	line:293
+ENDSTOPPULLUP_YMIN	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^  #define ENDSTOPPULLUP_YMIN$/;"	macro	line:294
+ENDSTOPPULLUP_ZMIN	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^  #define ENDSTOPPULLUP_ZMIN$/;"	macro	line:295
+X_ENDSTOPS_INVERTING	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^const bool X_ENDSTOPS_INVERTING = true; \/\/ set to true to invert the logic of the endstops.$/;"	variable	line:299
+Y_ENDSTOPS_INVERTING	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^const bool Y_ENDSTOPS_INVERTING = true; \/\/ set to true to invert the logic of the endstops.$/;"	variable	line:300
+Z_ENDSTOPS_INVERTING	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^const bool Z_ENDSTOPS_INVERTING = true; \/\/ set to true to invert the logic of the endstops.$/;"	variable	line:301
+DISABLE_MAX_ENDSTOPS	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^  #define DISABLE_MAX_ENDSTOPS$/;"	macro	line:307
+X_ENABLE_ON	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define X_ENABLE_ON /;"	macro	line:311
+Y_ENABLE_ON	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define Y_ENABLE_ON /;"	macro	line:312
+Z_ENABLE_ON	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define Z_ENABLE_ON /;"	macro	line:313
+E_ENABLE_ON	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define E_ENABLE_ON /;"	macro	line:314
+DISABLE_X	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define DISABLE_X /;"	macro	line:317
+DISABLE_Y	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define DISABLE_Y /;"	macro	line:318
+DISABLE_Z	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define DISABLE_Z /;"	macro	line:319
+DISABLE_E	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define DISABLE_E /;"	macro	line:320
+INVERT_X_DIR	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define INVERT_X_DIR /;"	macro	line:322
+INVERT_Y_DIR	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define INVERT_Y_DIR /;"	macro	line:323
+INVERT_Z_DIR	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define INVERT_Z_DIR /;"	macro	line:324
+INVERT_E0_DIR	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define INVERT_E0_DIR /;"	macro	line:325
+INVERT_E1_DIR	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define INVERT_E1_DIR /;"	macro	line:326
+INVERT_E2_DIR	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define INVERT_E2_DIR /;"	macro	line:327
+X_HOME_DIR	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define X_HOME_DIR /;"	macro	line:331
+Y_HOME_DIR	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define Y_HOME_DIR /;"	macro	line:332
+Z_HOME_DIR	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define Z_HOME_DIR /;"	macro	line:333
+min_software_endstops	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define min_software_endstops /;"	macro	line:335
+max_software_endstops	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define max_software_endstops /;"	macro	line:336
+X_MAX_POS	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define X_MAX_POS /;"	macro	line:338
+X_MIN_POS	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define X_MIN_POS /;"	macro	line:339
+Y_MAX_POS	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define Y_MAX_POS /;"	macro	line:340
+Y_MIN_POS	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define Y_MIN_POS /;"	macro	line:341
+Z_MAX_POS	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define Z_MAX_POS /;"	macro	line:342
+Z_MIN_POS	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define Z_MIN_POS /;"	macro	line:343
+X_MAX_LENGTH	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define X_MAX_LENGTH /;"	macro	line:345
+Y_MAX_LENGTH	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define Y_MAX_LENGTH /;"	macro	line:346
+Z_MAX_LENGTH	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define Z_MAX_LENGTH /;"	macro	line:347
+MANUAL_X_HOME_POS	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define MANUAL_X_HOME_POS /;"	macro	line:355
+MANUAL_Y_HOME_POS	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define MANUAL_Y_HOME_POS /;"	macro	line:356
+MANUAL_Z_HOME_POS	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define MANUAL_Z_HOME_POS /;"	macro	line:357
+NUM_AXIS	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define NUM_AXIS /;"	macro	line:361
+HOMING_FEEDRATE	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define HOMING_FEEDRATE /;"	macro	line:362
+DEFAULT_AXIS_STEPS_PER_UNIT	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define DEFAULT_AXIS_STEPS_PER_UNIT /;"	macro	line:366
+DEFAULT_MAX_FEEDRATE	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define DEFAULT_MAX_FEEDRATE /;"	macro	line:367
+DEFAULT_MAX_ACCELERATION	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define DEFAULT_MAX_ACCELERATION /;"	macro	line:368
+DEFAULT_ACCELERATION	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define DEFAULT_ACCELERATION /;"	macro	line:370
+DEFAULT_RETRACT_ACCELERATION	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define DEFAULT_RETRACT_ACCELERATION /;"	macro	line:371
+DEFAULT_XYJERK	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define DEFAULT_XYJERK /;"	macro	line:380
+DEFAULT_ZJERK	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define DEFAULT_ZJERK /;"	macro	line:381
+DEFAULT_EJERK	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define DEFAULT_EJERK /;"	macro	line:382
+FILAMANT_BOWDEN_LENGTH	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define FILAMANT_BOWDEN_LENGTH /;"	macro	line:385
+EEPROM_SETTINGS	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define EEPROM_SETTINGS$/;"	macro	line:397
+EEPROM_CHITCHAT	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define EEPROM_CHITCHAT$/;"	macro	line:400
+PLA_PREHEAT_HOTEND_TEMP	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define PLA_PREHEAT_HOTEND_TEMP /;"	macro	line:403
+PLA_PREHEAT_HPB_TEMP	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define PLA_PREHEAT_HPB_TEMP /;"	macro	line:404
+PLA_PREHEAT_FAN_SPEED	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define PLA_PREHEAT_FAN_SPEED /;"	macro	line:405
+ABS_PREHEAT_HOTEND_TEMP	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define ABS_PREHEAT_HOTEND_TEMP /;"	macro	line:407
+ABS_PREHEAT_HPB_TEMP	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define ABS_PREHEAT_HPB_TEMP /;"	macro	line:408
+ABS_PREHEAT_FAN_SPEED	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define ABS_PREHEAT_FAN_SPEED /;"	macro	line:409
+SDSUPPORT	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define SDSUPPORT /;"	macro	line:414
+ENABLE_ULTILCD2	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define ENABLE_ULTILCD2 /;"	macro	line:419
+DOGLCD	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^ #define DOGLCD$/;"	macro	line:448
+U8GLIB_ST7920	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^ #define U8GLIB_ST7920$/;"	macro	line:449
+REPRAP_DISCOUNT_SMART_CONTROLLER	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^ #define REPRAP_DISCOUNT_SMART_CONTROLLER$/;"	macro	line:450
+ULTIPANEL	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^ #define ULTIPANEL$/;"	macro	line:454
+NEWPANEL	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^ #define NEWPANEL$/;"	macro	line:455
+NEWPANEL	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^  #define NEWPANEL$/;"	macro	line:459
+ULTIPANEL	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^  #define ULTIPANEL$/;"	macro	line:460
+ULTIPANEL	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^ #define ULTIPANEL$/;"	macro	line:463
+NEWPANEL	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^ #define NEWPANEL$/;"	macro	line:464
+LCD_I2C_TYPE_PCA8574	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^ #define LCD_I2C_TYPE_PCA8574$/;"	macro	line:465
+LCD_I2C_ADDRESS	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^ #define LCD_I2C_ADDRESS /;"	macro	line:466
+LCD_I2C_TYPE_PCF8575	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^  #define LCD_I2C_TYPE_PCF8575$/;"	macro	line:475
+LCD_I2C_ADDRESS	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^  #define LCD_I2C_ADDRESS /;"	macro	line:476
+NEWPANEL	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^  #define NEWPANEL$/;"	macro	line:477
+ULTIPANEL	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^  #define ULTIPANEL$/;"	macro	line:478
+LCD_I2C_TYPE_MCP23017	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^  #define LCD_I2C_TYPE_MCP23017$/;"	macro	line:489
+LCD_I2C_ADDRESS	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^  #define LCD_I2C_ADDRESS /;"	macro	line:490
+LCD_USE_I2C_BUZZER	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^  #define LCD_USE_I2C_BUZZER /;"	macro	line:491
+NEWPANEL	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^  #define NEWPANEL$/;"	macro	line:492
+ULTIPANEL	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^  #define ULTIPANEL$/;"	macro	line:493
+LCD_I2C_TYPE_MCP23017	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^  #define LCD_I2C_TYPE_MCP23017$/;"	macro	line:503
+LCD_I2C_ADDRESS	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^  #define LCD_I2C_ADDRESS /;"	macro	line:504
+LCD_USE_I2C_BUZZER	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^  #define LCD_USE_I2C_BUZZER /;"	macro	line:505
+NEWPANEL	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^  #define NEWPANEL$/;"	macro	line:506
+ULTIPANEL	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^  #define ULTIPANEL$/;"	macro	line:507
+SDSUPPORT	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^  #define SDSUPPORT$/;"	macro	line:512
+ULTRA_LCD	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^  #define ULTRA_LCD$/;"	macro	line:513
+LCD_WIDTH	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^    #define LCD_WIDTH /;"	macro	line:515
+LCD_HEIGHT	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^    #define LCD_HEIGHT /;"	macro	line:516
+LCD_WIDTH	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^    #define LCD_WIDTH /;"	macro	line:518
+LCD_HEIGHT	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^    #define LCD_HEIGHT /;"	macro	line:519
+LCD_WIDTH	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^    #define LCD_WIDTH /;"	macro	line:521
+LCD_HEIGHT	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^    #define LCD_HEIGHT /;"	macro	line:522
+LCD_WIDTH	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^    #define LCD_WIDTH /;"	macro	line:527
+LCD_HEIGHT	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^    #define LCD_HEIGHT /;"	macro	line:528
+LCD_WIDTH	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^    #define LCD_WIDTH /;"	macro	line:530
+LCD_HEIGHT	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^    #define LCD_HEIGHT /;"	macro	line:531
+SOFT_PWM_SCALE	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define SOFT_PWM_SCALE /;"	macro	line:548
+END_OF_PRINT_RETRACTION	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define END_OF_PRINT_RETRACTION /;"	macro	line:584
+END_OF_PRINT_RECOVERY_SPEED	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define END_OF_PRINT_RECOVERY_SPEED /;"	macro	line:585
+PRIMING_MM3	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define PRIMING_MM3	/;"	macro	line:586
+PRIMING_MM3_PER_SEC	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define PRIMING_MM3_PER_SEC /;"	macro	line:588
+PRIMING_HEIGHT	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define PRIMING_HEIGHT /;"	macro	line:590
+LEVELING_OFFSET	/home/jerry/Desktop/Ultimaker2Marlin/src/Marlin/Configuration.h	/^#define LEVELING_OFFSET /;"	macro	line:593
