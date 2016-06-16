@@ -61,6 +61,12 @@
 #include "language.h"
 #include "Time.h"
 
+
+//Jerry - private variable to keep track of Markov process
+static int x_motor_markov_variable = 0;    // Ranging from -4 to +4
+static int y_motor_markov_variable = 0;    // Ranging from -4 to +4
+//Jerry - end initializing Markov process variables.
+
 //===========================================================================
 //=============================public variables ============================
 //===========================================================================
@@ -440,6 +446,12 @@ void getHighESpeed()
 
 void check_axes_activity()
 {
+
+  // Jerry - Calling in externally initialized code in Marlin_main.cpp.
+  extern int x_motor_markov_variable;
+  extern int y_motor_markov_variable;
+  // Jerry - End calling externally initialized code.
+
   unsigned char x_active = 0;
   unsigned char y_active = 0;
   unsigned char z_active = 0;
@@ -464,24 +476,89 @@ void check_axes_activity()
       block = &block_buffer[block_index];
 
       // Added code to print X and Y activity
-      time_t t = now();
-      MYSERIAL.println(String(minute(t))+" "+String(second(t)));
-      if (block->steps_x != 0) MYSERIAL.println("Active X motor");
-      else if (block->steps_x == 0) MYSERIAL.println("Inactive X motor");
-      if (block->steps_y != 0) MYSERIAL.println("Active Y motor");
-      else if (block->steps_y == 0) MYSERIAL.println("Inactive Y motor");
-      MYSERIAL.println();
+      // time_t t = now();
+      // MYSERIAL.println(String(minute(t))+" "+String(second(t)));
+      // if (block->steps_x != 0) MYSERIAL.println("Active X motor");
+      // else if (block->steps_x == 0) MYSERIAL.println("Inactive X motor");
+      // if (block->steps_y != 0) MYSERIAL.println("Active Y motor");
+      // else if (block->steps_y == 0) MYSERIAL.println("Inactive Y motor");
+      // MYSERIAL.println();
       // Finished adding code to print X and Y activity
 
-      if(block->steps_x != 0) x_active++;
-      if(block->steps_y != 0) y_active++;
-      if(block->steps_z != 0) z_active++;
-      if(block->steps_e != 0) e_active++;
+      if(block->steps_x != 0) {
+        if (x_motor_markov_variable == 4) x_motor_markov_variable = 4;
+        else if (x_motor_markov_variable == 3) x_motor_markov_variable = 4;
+        else if (x_motor_markov_variable == 2) x_motor_markov_variable = 3;
+        else if (x_motor_markov_variable == 1) x_motor_markov_variable = 2;
+        else if (x_motor_markov_variable = 0) x_motor_markov_variable = 1;
+        else if (x_motor_markov_variable = -1) x_motor_markov_variable = 0;
+        else if (x_motor_markov_variable = -2) x_motor_markov_variable = -1;
+        else if (x_motor_markov_variable = -3) x_motor_markov_variable = -2;
+        else if (x_motor_markov_variable = -4) x_motor_markov_variable = -3;
+        else x_motor_markov_variable = -4;
+        x_active++;
+      }
+      if(block->steps_y != 0) {
+        if (y_motor_markov_variable == 4) y_motor_markov_variable = 4;
+        else if (y_motor_markov_variable == 3) y_motor_markov_variable = 4;
+        else if (y_motor_markov_variable == 2) y_motor_markov_variable = 3;
+        else if (y_motor_markov_variable == 1) y_motor_markov_variable = 2;
+        else if (y_motor_markov_variable = 0) y_motor_markov_variable = 1;
+        else if (y_motor_markov_variable = -1) y_motor_markov_variable = 0;
+        else if (y_motor_markov_variable = -2) y_motor_markov_variable = -1;
+        else if (y_motor_markov_variable = -3) y_motor_markov_variable = -2;
+        else if (y_motor_markov_variable = -4) y_motor_markov_variable = -3;
+        else y_motor_markov_variable = -4;
+        y_active++;
+      }
+      if(block->steps_z != 0) {
+        z_active++;
+      }
+      if(block->steps_e != 0) {
+        e_active++;
+      }
+
+      // Adding code to print x_active, y_active and z_active
+      //MYSERIAL.println(String(x_active)+" "+String(y_active)+" "+String(z_active));
+      // End printing
+
       block_index = (block_index+1) & (BLOCK_BUFFER_SIZE - 1);
     }
   }
-  if((DISABLE_X) && (x_active == 0)) disable_x();
-  if((DISABLE_Y) && (y_active == 0)) disable_y();
+
+  if (x_active == 0) {
+    if (x_motor_markov_variable == 4) x_motor_markov_variable = 3;
+    else if (x_motor_markov_variable == 3) x_motor_markov_variable = 2;
+    else if (x_motor_markov_variable == 2) x_motor_markov_variable = 1;
+    else if (x_motor_markov_variable == 1) x_motor_markov_variable = 0;
+    else if (x_motor_markov_variable = 0) x_motor_markov_variable = -1;
+    else if (x_motor_markov_variable = -1) x_motor_markov_variable = -2;
+    else if (x_motor_markov_variable = -2) x_motor_markov_variable = -3;
+    else if (x_motor_markov_variable = -3) x_motor_markov_variable = -4;
+    else if (x_motor_markov_variable = -4) x_motor_markov_variable = -4;
+    else x_motor_markov_variable = -4;
+  }
+
+  if (y_active == 0) {
+    if (y_motor_markov_variable == 4) y_motor_markov_variable = 3;
+    else if (y_motor_markov_variable == 3) y_motor_markov_variable = 2;
+    else if (y_motor_markov_variable == 2) y_motor_markov_variable = 1;
+    else if (y_motor_markov_variable == 1) y_motor_markov_variable = 0;
+    else if (y_motor_markov_variable = 0) y_motor_markov_variable = -1;
+    else if (y_motor_markov_variable = -1) y_motor_markov_variable = -2;
+    else if (y_motor_markov_variable = -2) y_motor_markov_variable = -3;
+    else if (y_motor_markov_variable = -3) y_motor_markov_variable = -4;
+    else if (y_motor_markov_variable = -4) y_motor_markov_variable = -4;
+    else y_motor_markov_variable = -4;
+  }
+
+  MYSERIAL.println(String(x_motor_markov_variable)+" "+String(y_motor_markov_variable));
+
+  if((DISABLE_X) && (x_motor_markov_variable == 0)) disable_x();
+  if((DISABLE_Y) && (y_motor_markov_variable == 0)) disable_y();
+
+  // if((DISABLE_X) && (x_active == 0)) disable_x();
+  // if((DISABLE_Y) && (y_active == 0)) disable_y();
   if((DISABLE_Z) && (z_active == 0)) disable_z();
   if((DISABLE_E) && (e_active == 0))
   {

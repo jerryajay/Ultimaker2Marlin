@@ -47,4 +47,3 @@ print "};"
 print
 
 print "#endif"
-

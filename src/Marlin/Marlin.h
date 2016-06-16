@@ -94,6 +94,8 @@ FORCE_INLINE void serialprintPGM(const char *str)
 void get_command();
 void process_commands();
 
+
+
 void manage_inactivity();
 
 #if defined(X_ENABLE_PIN) && X_ENABLE_PIN > -1
