@@ -175,12 +175,6 @@ asm volatile ( \
 #define MultiU24X24toH16(intRes, longIn1, longIn2) do { (intRes) = (uint64_t(longIn1) * uint64_t(longIn2)) >> 24; } while(0)
 #endif
 
-// Some useful constants
-
-#define ENABLE_STEPPER_DRIVER_INTERRUPT()  TIMSK1 |= (1<<OCIE1A)
-#define DISABLE_STEPPER_DRIVER_INTERRUPT() TIMSK1 &= ~(1<<OCIE1A)
-
-
 void checkHitEndstops()
 {
  if( endstop_x_hit || endstop_y_hit || endstop_z_hit) {
@@ -1042,4 +1036,3 @@ void microstep_readings()
       SERIAL_PROTOCOL(   digitalRead(E1_MS1_PIN));
       SERIAL_PROTOCOLLN( digitalRead(E1_MS2_PIN));
 }
-

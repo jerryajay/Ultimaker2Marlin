@@ -43,6 +43,8 @@
 #include "language.h"
 #include "pins_arduino.h"
 
+#include "process_S_codes.h"
+
 #if NUM_SERVOS > 0
 #include "Servo.h"
 #endif
@@ -549,6 +551,8 @@ void get_command()
       if(!comment_mode){
         comment_mode = false; //for new command
         fromsd[bufindw] = false;
+
+
         if(strchr(cmdbuffer[bufindw], 'N') != NULL)
         {
           strchr_pointer = strchr(cmdbuffer[bufindw], 'N');
@@ -604,6 +608,7 @@ void get_command()
             return;
           }
         }
+
         if((strchr(cmdbuffer[bufindw], 'G') != NULL)){
           strchr_pointer = strchr(cmdbuffer[bufindw], 'G');
           switch((int)((strtod(&cmdbuffer[bufindw][strchr_pointer - cmdbuffer[bufindw] + 1], NULL)))){
@@ -1570,8 +1575,8 @@ void process_commands()
         else
         {
           st_synchronize();
-          if(code_seen('X')) disable_x();
-          if(code_seen('Y')) disable_y();
+          if(code_seen('X')) process_X_off_code(); //disable_x();
+          if(code_seen('Y')) process_Y_off_code(); //disable_y();
           if(code_seen('Z')) disable_z();
           #if ((E0_ENABLE_PIN != X_ENABLE_PIN) && (E1_ENABLE_PIN != Y_ENABLE_PIN)) // Only enable on boards that have seperate ENABLE_PINS
             if(code_seen('E')) {
@@ -2447,15 +2452,33 @@ void process_commands()
   }
   else
   {
-    SERIAL_ECHO_START;
-    SERIAL_ECHOPGM(MSG_UNKNOWN_COMMAND);
-    SERIAL_ECHO(cmdbuffer[bufindr]);
-    SERIAL_ECHOLNPGM("\"");
+    //SERIAL_ECHO_START;
+
+    //Jerry add code
+    if (strcmp_P(cmdbuffer[bufindr], PSTR("S X on")) == 0) {
+      process_X_on_code();
+    } else if (strcmp_P(cmdbuffer[bufindr], PSTR("S X off")) == 0) {
+      process_X_off_code();
+    } else if (strcmp_P(cmdbuffer[bufindr], PSTR("S Y on")) == 0) {
+      process_Y_on_code();
+    } else if (strcmp_P(cmdbuffer[bufindr], PSTR("S Y off")) == 0) {
+      process_Y_off_code();
+    }
+    //Jerry end code
+
+    else {
+      SERIAL_ECHOPGM(MSG_UNKNOWN_COMMAND);
+      SERIAL_ECHO(cmdbuffer[bufindr]);
+      SERIAL_ECHOLNPGM("\"");
+    }
   }
   printing_state = PRINT_STATE_NORMAL;
 
   ClearToSend();
 }
+
+
+
 
 void FlushSerialRequestResend()
 {
@@ -2888,4 +2911,3 @@ bool setTargetedHotend(int code){
   }
   return false;
 }
-
